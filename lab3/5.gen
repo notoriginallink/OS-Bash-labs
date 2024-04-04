@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# named chanel 5.pipe should be created before run
+
+echo $$ > .5.pid
+
+while true; do
+	read LINE
+	echo "$LINE" > 5.pipe
+done

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+while true; do
+	read LINE
+	case $LINE in
+		"+")
+			kill -USR1 $(cat .6.pid)
+			;;
+		"*")
+			kill -USR2 $(cat .6.pid)
+			;;
+		"TERM")
+			kill -SIGTERM $(cat .6.pid)
+			exit 0
+			;;
+		*)
+			;;
+	esac
+done
