@@ -1,20 +1,22 @@
 #!/bin/bash
 
 # there must be only 1 parameter - name of file to be deleted
-if [[ $# -ne 1 ]]; then
-	echo "Invalid number of parameters"
+if [[ $# -eq 0 ]]; then
+	echo "Error: invalid number of parameters"
 	exit 1
 fi
 
+NAME=$@
+
 # check that file is in PWD
-if [[ $1 =~ .*\/.* ]]; then
+if [[ $NAME =~ .*\/.* ]]; then
 	echo "FIle must be in current directory"
 	exit 2
 fi
 
 # check if file in this directory with this name exists
-FILE="$PWD/$1"
-if ! [[ -f $FILE ]]; then
+FILE="$PWD/$NAME"
+if ! [[ -f "$FILE" ]]; then
 	echo "File $FILE doesn't exists"
 	exit 2
 fi
@@ -32,18 +34,15 @@ fi
 # create new link and remove old file
 COUNT=$(cat $TRASH_COUNT)
 LINK="$TRASH/$COUNT"
-ln $FILE $LINK &&
+ln "$FILE" $LINK &&
 {
 	COUNT=$(($COUNT + 1))
 	echo $COUNT > $TRASH_COUNT
 	echo "$FILE $LINK" > $TRASH_LOG
 
-	rm -f $FILE
+	rm -f "$FILE"
 
-	echo "File $1 moved to trash bin"
+	echo "File $NAME moved to trash bin"
 }
 
 exit 0
-	
-
-

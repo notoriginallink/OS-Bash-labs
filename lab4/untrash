@@ -1,12 +1,14 @@
 #!/bin/bash
 
 # check correctness of given parameter
-if [[ $# -ne 1 ]]; then
+if [[ $# -eq 0 ]]; then
 	echo "Error: invalid number of parameters"
 	exit 1
 fi
 
-if [[ $1 =~ .*\/.* ]]; then
+FILENAME=$@
+
+if [[ $FILENAME =~ .*\/.* ]]; then
 	echo "Error: path given instead of file name"
 	exit 1
 fi
@@ -21,18 +23,17 @@ if ! [[ -f $TRASH_LOG ]] || ! [[ -d $TRASH ]]; then
 fi
 
 # find in LOG file all matches of file name
-FILENAME="$1"
-FILENAME_REGEXP="^[^[:space:]]*/$1"
+FILENAME_REGEXP="^[^[:space:]]*/$FILENAME"
 
-grep -E -w $FILENAME_REGEXP $TRASH_LOG | while read -r LINE; do	
+grep -E -w "$FILENAME_REGEXP" $TRASH_LOG | while read -r LINE; do	
 	# check if file in trash bin
-	TRASH_PATH=$(echo $LINE | awk '{print $2}')
+	TRASH_PATH=$(echo $LINE | awk '{print $(NF)}')
 	if ! [[ -f $TRASH_PATH ]]; then
 		continue
 	fi
 
 	# for each match ask if the file should be restored
-	ORIGIN_PATH=$(echo $LINE | awk '{print $1}')
+	ORIGIN_PATH=$(echo $LINE | awk '{$(NF)=""; print $0}' | sed 's/.$//')
 	while true; do
 		read -r -p "Do you want to restore $ORIGIN_PATH? [y/n]: " ANSWER < /dev/tty
 		case $ANSWER in
@@ -48,18 +49,18 @@ grep -E -w $FILENAME_REGEXP $TRASH_LOG | while read -r LINE; do
 	# restore file if answer is positive (starts with Y/y)
 	if [[ $ANSWER =~ ^[Yy]+.* ]]; then
 		# trash is path to the file in trash bin, restore is dir where the file will be
-		RESTORE_DIR=$(echo $ORIGIN_PATH | grep -E -o ".*\/($1){0}" | sed 's/.$//')
+		RESTORE_DIR=$(echo "$ORIGIN_PATH" | grep -E -o ".*\/($1){0}" | sed 's/.$//')
 		
 		# check if restore directory still exists
-		if ! [[ -d $RESTORE_DIR ]]; then
+		if ! [[ -d "$RESTORE_DIR" ]]; then
 			echo "INFO: $RESTORE_DIR doesn't exists, file will be restored in /home"
 			$RESTORE_DIR="/home"
 		fi 
 
-		RESTORE_PATH="$RESTORE_DIR/$1"		
+		RESTORE_PATH="$RESTORE_DIR/$FILENAME"		
 
 		# check if there a name conflict in restore directory
-		while [[ -f $RESTORE_PATH ]]; do
+		while [[ -f "$RESTORE_PATH" ]]; do
 			read -r -p "File with name $FILENAME already exists in $RESTORE_DIR, please enter a new name: " NEW_NAME < /dev/tty
 			if [[ $NEW_NAME =~ .*\/.* ]]; then
 				echo "Error: invalid file name"
@@ -70,9 +71,9 @@ grep -E -w $FILENAME_REGEXP $TRASH_LOG | while read -r LINE; do
 		done
 
 		# restore file
-		ln $TRASH_PATH $RESTORE_PATH &&
+		ln "$TRASH_PATH" "$RESTORE_PATH" &&
 		{
-			rm -f $TRASH_PATH
+			rm -f "$TRASH_PATH"
 			echo "File $1 restored as $FILENAME in $RESTORE_PATH"
 		}
 	fi
