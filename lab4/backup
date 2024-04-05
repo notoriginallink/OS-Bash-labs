@@ -33,28 +33,46 @@ if [[ $CREATE_NEW_DIR -eq 1 ]]; then
 	mkdir "$BACKUP_DIR"
 fi	
 
+# if new backup directory was created
 if [[ $CREATE_NEW_DIR -eq 1 ]]; then
-	echo "Created new backup directory $BACKUP_DIR at ["$(date +"%T")"]" >> $REPORT
+	echo "["$(date +"%T")"]: Create $BACKUP_DIR" >> $REPORT
 	for FILE in /home/user/source/*; do
 		FILENAME=$(echo "$FILE" | grep -E -o "[^\/]*$")
 		COPY_LINK="$BACKUP_DIR/$FILENAME"
 		
-		ln "$FILE" "$COPY_LINK" &&
+		cp "$FILE" "$COPY_LINK" &&
 		{
-			echo "$FILE" >> $REPORT
+			echo "Add $FILE to backup" >> $REPORT
 		}
 	done
-	
+	exit 0
 fi
 
+# update existing backup
+echo "["$(date +"%T")"]: Update $BACKUP_DIR" >> $REPORT
 
+for FILE in /home/user/source/*; do
+	FILENAME=$(echo "$FILE" | grep -E -o "[^\/]*$")
+	COPY_LINK="$BACKUP_DIR/$FILENAME"
 
-
-
-
-
-
-
-
-
+	# if already exists file with this name
+	if [[ -f "$COPY_LINK" ]]; then
+		SIZE_SOURCE=$(stat -c %s "$FILE")
+		SIZE_BACKUP=$(stat -c %s "$COPY_LINK")
+		
+		# copy new file if sizes are different
+		if [[ $SIZE_SOURCE -ne $SIZE_BACKUP ]]; then
+			mv -f "$COPY_LINK" "$COPY_LINK.$CURRENT_DATE"
+			cp "$FILE" "$COPY_LINK" &&
+			{
+				echo "Update $COPY_LINK Previous version is $COPY_LINK.$CURRENT_DATE" >> $REPORT
+			}
+		fi
+	else
+		cp "$FILE" "$COPY_LINK" &&
+		{
+			echo "Add $FILE to backup" >> $REPORT
+		}
+	fi
+done
 
