@@ -1,0 +1,79 @@
+#!/bin/bash
+
+IS_LEADER=1
+ALL_ALIVE=0
+READ_ONLY=0
+NUM=0
+
+usr1()
+{
+	if [[ $READ_LINE -eq 1 ]]; then
+		echo "Error: we are in read-only mode"
+	elif [[ $IS_LEADER -eq 1 ]]; then
+		read -r -p "Enter new number: " NEW_NUM < /dev/tty
+		NUM=$NEW_NUM
+		echo $NUM > ./.num
+
+		for TPID in $(ps -e -h | awk '{print $1}' | sort -r -nk1); do
+			if [[ $TPID -eq $$ ]]; then
+				continue
+			fi
+			
+			if ! [[ -f /proc/$TPID/cmdline ]]; then
+				continue
+			fi
+			
+			if [[ $(tr -d '\0' < /proc/$TPID/cmdline) =~ ^(bash).*(dummy)$ ]]; then
+				kill -USR1 $TPID
+			fi
+		done
+	else
+		NUM=$(cat ./.num)
+	fi
+}
+trap 'usr1' USR1
+
+usr2()
+{
+	echo $NUM
+}
+trap 'usr2' USR2
+
+for PID in $(ps -e -h | awk '{print $1}' | sort -r -nk1); do
+	if [[ $PID -eq $$ ]]; then
+		continue
+	fi
+
+	CMD_LINE="/proc/$PID/cmdline"
+	if ! [[ -f $CMD_LINE ]]; then
+		continue
+	fi
+	
+	if [[ $(tr -d '\0' < $CMD_LINE) =~ ^(bash).*(dummy)$ ]]; then
+		IS_LEADER=0
+	fi
+done
+
+while true;
+	ALIVE=0
+	for PID in $(ps -e -h | awk 'print $1'); do
+		CMD_LINE="/proc/$PID/cmdline"
+		if ! [[ -f $CMD_LINE ]]; then
+			continue
+		fi
+		
+		if [[ $(tr -d '\0' < $CMD_LINE) =~ ^(bash).*(dummy)$ ]]; then
+			ALIVE=$(($ALIVE+1))
+		fi
+	done
+
+	if [[ ALIVE -eq 3 ]]; then
+		if [[ $ALL_ALIVE -eq 0 ]]; then
+			ALL_ALIVE=1
+		fi
+	else
+		if [[ $ALL_ALIVE -eq 1 ]]; then
+			READ_ONLY=1
+		fi
+	fi
+done
