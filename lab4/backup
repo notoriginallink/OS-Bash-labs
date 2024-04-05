@@ -1,0 +1,36 @@
+#!/bin/bash
+
+CURRENT_DATE=$(date +"%F")
+
+CREATE_NEW_DIR=1
+BACKUP_DIR=""
+
+BACKUP_REGEXP=".*\/Backup-[1-9][0-9]*-[0-9]+-[0-9]+"
+for DIR in /home/user/*; do
+	if [[ -d "$DIR" ]] && [[ "$DIR" =~ $BACKUP_REGEXP ]]; then
+		#echo $DIR
+		BACKUP_NAME=$(echo "$DIR" | grep -E -o "Backup.*")
+		BACKUP_TIME=$(echo "$BACKUP_NAME" | grep -E -o "[0-9].*")
+		#echo "$BACKUP_NAME"
+		#echo "$BACKUP_TIME"
+		
+
+		# check if found backup file was created less than 7 days ago 
+		CURRENT_TIME_SEC=$(date -d $CURRENT_DATE +"%s")
+		BACKUP_TIME_SEC=$(date -d $BACKUP_TIME +"%s")
+		let WEEK_DIFF=($CURRENT_TIME_SEC-$BACKUP_TIME_SEC)/60/60/24
+		
+		if [[ WEEK_DIFF -le 7 ]]; then
+			CREATE_NEW_DIR=0
+			BACKUP_DIR="$DIR"
+			break
+		fi
+	fi
+done
+
+if [[ $CREATE_NEW_DIR -eq 1 ]]; then
+	BACKUP_DIR="/home/user/Backup-$CURRENT_DATE"
+	mkdir "$BACKUP_DIR"
+fi	
+
+echo "Working in: $BACKUP_DIR"
