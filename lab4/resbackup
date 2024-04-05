@@ -1,0 +1,21 @@
+#!/bin/bash
+
+read -r -p "Are you sure you want to delete ALL backups? [SURE]: " ANSWER < /dev/tty
+
+REGEXP=".*\/Backup-[1-9][0-9]*-[0-9]+-[0-9]+"
+
+case $ANSWER in 
+	SURE)
+		for DIR in /home/user/*; do
+			if [[ -d $DIR ]] && [[ $DIR =~ $REGEXP ]]; then
+				rm -r -f -d "$DIR"
+			fi 
+		done
+		rm -f "/home/user/backup-report"
+		exit 0
+		;;
+	*)
+		echo "Deletion canceled"
+		exit 0
+		;;
+esac
