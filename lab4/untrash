@@ -60,12 +60,12 @@ grep -E -w $FILENAME_REGEXP $TRASH_LOG | while read -r LINE; do
 
 		# check if there a name conflict in restore directory
 		while [[ -f $RESTORE_PATH ]]; do
-			echo -r -p "File with name $FILENAME already exists in $RESTORE_DIR, please enter a new name: " NEW_NAME < /dev/tty
+			read -r -p "File with name $FILENAME already exists in $RESTORE_DIR, please enter a new name: " NEW_NAME < /dev/tty
 			if [[ $NEW_NAME =~ .*\/.* ]]; then
 				echo "Error: invalid file name"
 			else
-				$FILENAME="$NEW_NAME"
-				$RESTORE_PATH="$RESTORE_DIR/$FILENAME"
+				FILENAME="$NEW_NAME"
+				RESTORE_PATH="$RESTORE_DIR/$FILENAME"
 			fi
 		done
 
