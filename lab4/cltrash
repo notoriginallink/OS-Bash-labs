@@ -1,0 +1,18 @@
+#!/bin/bash
+
+read -r -p "All files from trash will be deleted! Are you sure? [SURE]: " ANSWER < /dev/tty
+
+case $ANSWER in
+	SURE)
+		rm -f /home/.trash.log
+		rm -f /home/.trash.count
+		rm -f -r /home/.trash
+		echo "All files from trash were deleted"
+		exit 0
+		;;
+	*)
+		echo "Invalid confirmation"
+		exit 0
+		;;
+esac
+
