@@ -5,15 +5,15 @@ CURRENT_DATE=$(date +"%F")
 CREATE_NEW_DIR=1
 BACKUP_DIR=""
 
+REPORT="/home/user/backup-report"
+touch $REPORT
+
+# iterate over all catalogs in /home/user in serach of backup directories
 BACKUP_REGEXP=".*\/Backup-[1-9][0-9]*-[0-9]+-[0-9]+"
 for DIR in /home/user/*; do
 	if [[ -d "$DIR" ]] && [[ "$DIR" =~ $BACKUP_REGEXP ]]; then
-		#echo $DIR
 		BACKUP_NAME=$(echo "$DIR" | grep -E -o "Backup.*")
 		BACKUP_TIME=$(echo "$BACKUP_NAME" | grep -E -o "[0-9].*")
-		#echo "$BACKUP_NAME"
-		#echo "$BACKUP_TIME"
-		
 
 		# check if found backup file was created less than 7 days ago 
 		CURRENT_TIME_SEC=$(date -d $CURRENT_DATE +"%s")
@@ -33,4 +33,28 @@ if [[ $CREATE_NEW_DIR -eq 1 ]]; then
 	mkdir "$BACKUP_DIR"
 fi	
 
-echo "Working in: $BACKUP_DIR"
+if [[ $CREATE_NEW_DIR -eq 1 ]]; then
+	echo "Created new backup directory $BACKUP_DIR at ["$(date +"%T")"]" >> $REPORT
+	for FILE in /home/user/source/*; do
+		FILENAME=$(echo "$FILE" | grep -E -o "[^\/]*$")
+		COPY_LINK="$BACKUP_DIR/$FILENAME"
+		
+		ln "$FILE" "$COPY_LINK" &&
+		{
+			echo "$FILE" >> $REPORT
+		}
+	done
+	
+fi
+
+
+
+
+
+
+
+
+
+
+
+
