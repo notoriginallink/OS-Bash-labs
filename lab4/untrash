@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# check correctness of given parameter
+if [[ $# -ne 1 ]]; then
+	echo "Error: invalid number of parameters"
+	exit 1
+fi
+
+if [[ $1 =~ .*\/.* ]]; then
+	echo "Error: path given instead of file name"
+	exit 1
+fi
+
+TRASH="/home/.trash"
+TRASH_LOG="/home/.trash.log"
+TRASH_COUNT="home/.trash.count"
+
+if ! [[ -f $TRASH_LOG ]] || ! [[ -d $TRASH ]]; then
+	echo "Error: trash bin files corrupted, impossible to restore file"
+	exit 2
+fi
+
+# find in LOG file all matches of file name
+FILENAME_REGEXP="^[^[:space:]]*/$1$"
