@@ -21,4 +21,64 @@ if ! [[ -f $TRASH_LOG ]] || ! [[ -d $TRASH ]]; then
 fi
 
 # find in LOG file all matches of file name
-FILENAME_REGEXP="^[^[:space:]]*/$1$"
+FILENAME="$1"
+FILENAME_REGEXP="^[^[:space:]]*/$1"
+
+grep -E -w $FILENAME_REGEXP $TRASH_LOG | while read -r LINE; do	
+	# for each match ask if the file should be restored
+	ORIGIN_PATH=$(echo $LINE | awk '{print $1}')
+	while true; do
+		read -r -p "Do you want to restore $ORIGIN_PATH? [y/n]: " ANSWER < /dev/tty
+		case $ANSWER in
+			[Yy]* | [Nn]*)
+				break
+				;;
+			*)
+				echo "Error: invalid answer format"
+				;;
+		esac
+	done
+
+	# restore file if answer is positive (starts with Y/y)
+	if [[ $ANSWER =~ ^[Yy]+.* ]]; then
+		# trash is path to the file in trash bin, restore is dir where the file will be
+		TRASH_PATH=$(echo $LINE | awk '{print $2}')
+		RESTORE_DIR=$(echo $ORIGIN_PATH | grep -E -o ".*\/($1){0}" | sed 's/.$//')
+		
+		# check if restore directory still exists
+		if ! [[ -d $RESTORE_DIR ]]; then
+			echo "INFO: $RESTORE_DIR doesn't exists, file will be restored in /home"
+			$RESTORE_DIR="/home"
+		fi 
+
+		RESTORE_PATH="$RESTORE_DIR/$1"		
+
+		# check if there a name conflict in resore directory
+		while [[ -f $RESTORE_PATH ]]; do
+			echo -r -p "File with name $FILENAME already exists in $RESTORE_DIR, please enter a new name: " NEW_NAME < /dev/tty
+			if [[ $NEW_NAME =~ .*\/.* ]]; then
+				echo "Error: invalid file name"
+			else
+				$FILENAME="$NEW_NAME"
+				$RESTORE_PATH="$RESTORE_DIR/$FILENAME"
+			fi
+		done
+
+		echo "File $1 will be restored as $FILENAME in $RESTORE_PATH"
+	fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+done
