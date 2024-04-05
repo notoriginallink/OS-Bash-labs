@@ -54,9 +54,10 @@ for PID in $(ps -e -h | awk '{print $1}' | sort -r -nk1); do
 	fi
 done
 
-while true;
+while true; do
+	sleep 5
 	ALIVE=0
-	for PID in $(ps -e -h | awk 'print $1'); do
+	for PID in $(ps -e -h | awk '{print $1}'); do
 		CMD_LINE="/proc/$PID/cmdline"
 		if ! [[ -f $CMD_LINE ]]; then
 			continue
