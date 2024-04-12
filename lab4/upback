@@ -1,0 +1,36 @@
+#!/bin/bash
+
+RESTORE_DIR="/home/user/restore"
+
+if ! [[ -d $RESTORE_DIR ]]; then
+	mkdir $RESTORE_DIR
+fi
+
+BACKUP_DIR=""
+BACKUP_DATE=""
+
+# iterate over all files in /home/user to find newest backup
+BACKUP_REGEXP=".*\/Backup-[1-9][0-9]*-[0-9]+-[0-9]+"
+for DIR in /home/user/*; do
+	if [[ -d "$DIR" ]] && [[ "$DIR" =~ $BACKUP_REGEXP ]]; then
+		BACKUP_NAME=$(echo "$DIR" | grep -E -o "Backup.*")
+		BACKUP_TIME=$(echo "$BACKUP_NAME" | grep -E -o "[0-9].*")
+		
+		if [[ $BACKUP_DIR == "" ]]; then
+			BACKUP_DIR=$DIR
+			BACKUP_DATE=$BACKUP_TIME
+			continue
+		fi
+		
+		CURRENT_BACKUP_TIME_SEC=$(date -d $BACKUP_TIME +"%s")
+		MAX_BACKUP_TIME_SEC=$(date -d $BACKUP_DATE +"%s")
+
+		if [[ $CURRENT_BACKUP_TIME_SEC -ge $MAX_BACKUP_TIME_SEC ]]; then
+			BACKUP_DIR=$DIR
+			BACKUP_DATE=$BACKUP_TIME
+		fi
+		
+	fi
+done
+
+echo $BACKUP_DIR

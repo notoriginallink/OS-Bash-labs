@@ -12,6 +12,7 @@ case $ANSWER in
 			fi 
 		done
 		rm -f "/home/user/backup-report"
+		rm -r -f -d "/home/user/restore"
 		exit 0
 		;;
 	*)
