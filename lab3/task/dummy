@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "PID=$$"
+
 IS_LEADER=1
 ALL_ALIVE=0
 READ_ONLY=0
@@ -23,6 +25,7 @@ set_number()
 				kill -USR1 $PID
 			fi
 		done
+		echo "New numner=$NUM"
 	else
 		NUM=$(cat .num)
 	fi
@@ -31,7 +34,7 @@ trap 'set_number' USR1
 
 get_number()
 {
-	echo $NUM
+	echo "Number=$NUM"
 }
 trap 'get_number' USR2
 
@@ -46,8 +49,6 @@ is_dummy_fn()
 		echo 0
 	fi
 }
-
-echo "START"
 
 # When process start it looks up for other dummy procs
 for PID in $(ps -e -h | awk '{print $1}'); do
@@ -73,8 +74,6 @@ if [[ $IS_LEADER -eq 1 ]]; then
 else
 	NUM=$(cat .num)
 fi
-
-echo "CURRENT NUM=$NUM"
 
 while true; do
 	sleep 5
