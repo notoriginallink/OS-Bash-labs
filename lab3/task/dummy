@@ -1,0 +1,97 @@
+#!/bin/bash
+
+IS_LEADER=1
+ALL_ALIVE=0
+READ_ONLY=0
+NUM=0
+
+set_number()
+{
+	if [[ $READ_ONLY -eq 1 ]]; then
+		echo "Error: we are in read-only mode"
+	elif [[ $IS_LEADER -eq 1 ]]; then
+		read -r -p "Enter new number: " NEW_NUM < /dev/tty
+		NUM=$NEW_NUM
+		echo $NUM > .num
+
+		for PID in $(ps -e -h | awk '{print $1}'); do
+			if [[ $PID -eq $$ ]]; then
+				continue
+			fi
+
+			if [[ $(is_dummy_fn $PID) -eq 1 ]]; then
+				kill -USR1 $PID
+			fi
+		done
+	else
+		NUM=$(cat .num)
+	fi
+}
+trap 'set_number' USR1
+
+get_number()
+{
+	echo $NUM
+}
+trap 'get_number' USR2
+
+is_dummy_fn()
+{
+	CMD_LINE="/proc/$1/cmdline"
+	if ! [[ -f $CMD_LINE ]]; then
+		echo 0
+	elif [[  $(tr -d '\0' < $CMD_LINE) =~ .*(dummy)$ ]]; then
+		echo 1
+	else
+		echo 0
+	fi
+}
+
+echo "START"
+
+# When process start it looks up for other dummy procs
+for PID in $(ps -e -h | awk '{print $1}'); do
+	# ignore itself
+	if [[ $PID -eq $$ ]]; then
+		continue
+	fi
+
+	if [[ $(is_dummy_fn $PID) -eq 1 ]]; then
+		IS_LEADER=0
+	fi
+done
+
+echo "LEADER FLAG=$IS_LEADER"
+
+if [[ $IS_LEADER -eq 1 ]]; then
+	NUM=$RANDOM
+
+	rm -f .num
+	touch .num
+
+	echo $NUM > .num
+else
+	NUM=$(cat .num)
+fi
+
+echo "CURRENT NUM=$NUM"
+
+while true; do
+	sleep 5
+	ALIVE=0
+	for PID in $(ps -e -h | awk '{print $1}'); do
+		if [[ $(is_dummy_fn $PID) -eq 1 ]]; then
+			ALIVE=$(($ALIVE+1))
+		fi
+	done
+
+	if [[ ALIVE -eq 3 ]]; then
+		if [[ $ALL_ALIVE -eq 0 ]]; then
+			ALL_ALIVE=1
+		fi
+	else
+		if [[ $ALL_ALIVE -eq 1 ]]; then
+			READ_ONLY=1
+		fi
+	fi
+done
