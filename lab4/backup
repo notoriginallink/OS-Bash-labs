@@ -8,7 +8,7 @@ BACKUP_DIR=""
 REPORT="/home/user/backup-report"
 touch $REPORT
 
-# iterate over all catalogs in /home/user in serach of backup directories
+# iterate over all catalogs in /home/user in search of backup directories
 BACKUP_REGEXP=".*\/Backup-[1-9][0-9]*-[0-9]+-[0-9]+"
 for DIR in /home/user/*; do
 	if [[ -d "$DIR" ]] && [[ "$DIR" =~ $BACKUP_REGEXP ]]; then
@@ -31,15 +31,19 @@ done
 if [[ $CREATE_NEW_DIR -eq 1 ]]; then
 	BACKUP_DIR="/home/user/Backup-$CURRENT_DATE"
 	mkdir "$BACKUP_DIR"
-fi	
+fi
 
 # if new backup directory was created
 if [[ $CREATE_NEW_DIR -eq 1 ]]; then
 	echo "["$(date +"%T")"]: Create $BACKUP_DIR" >> $REPORT
-	for FILE in /home/user/source/*; do
-		FILENAME=$(echo "$FILE" | grep -E -o "[^\/]*$")
+	ls -1 -a /home/user/source/ | while read -r FILENAME; do
+		if [[ $FILENAME == '.' ]] || [[ $FILENAME == '..' ]]; then
+			continue
+		fi
+
+		FILE="/home/user/source/$FILENAME"
 		COPY_LINK="$BACKUP_DIR/$FILENAME"
-		
+
 		cp "$FILE" "$COPY_LINK" &&
 		{
 			echo "Add $FILE to backup" >> $REPORT
@@ -51,8 +55,12 @@ fi
 # update existing backup
 echo "["$(date +"%T")"]: Update $BACKUP_DIR" >> $REPORT
 
-for FILE in /home/user/source/*; do
-	FILENAME=$(echo "$FILE" | grep -E -o "[^\/]*$")
+ls -1 -a /home/user/source/ | while read -r FILENAME; do
+	if [[ $FILENAME == '.' ]] || [[ $FILENAME == '..' ]]; then
+		continue
+	fi
+	echo $FILENAME
+	FILE="/home/user/source/$FILENAME"
 	COPY_LINK="$BACKUP_DIR/$FILENAME"
 
 	# if already exists file with this name
