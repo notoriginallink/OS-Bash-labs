@@ -19,7 +19,7 @@ for DIR in /home/user/*; do
 		CURRENT_TIME_SEC=$(date -d $CURRENT_DATE +"%s")
 		BACKUP_TIME_SEC=$(date -d $BACKUP_TIME +"%s")
 		let WEEK_DIFF=($CURRENT_TIME_SEC-$BACKUP_TIME_SEC)/60/60/24
-		
+
 		if [[ WEEK_DIFF -le 7 ]]; then
 			CREATE_NEW_DIR=0
 			BACKUP_DIR="$DIR"
@@ -59,7 +59,7 @@ ls -1 -a /home/user/source/ | while read -r FILENAME; do
 	if [[ $FILENAME == '.' ]] || [[ $FILENAME == '..' ]]; then
 		continue
 	fi
-	echo $FILENAME
+
 	FILE="/home/user/source/$FILENAME"
 	COPY_LINK="$BACKUP_DIR/$FILENAME"
 
@@ -67,7 +67,7 @@ ls -1 -a /home/user/source/ | while read -r FILENAME; do
 	if [[ -f "$COPY_LINK" ]]; then
 		SIZE_SOURCE=$(stat -c %s "$FILE")
 		SIZE_BACKUP=$(stat -c %s "$COPY_LINK")
-		
+
 		# copy new file if sizes are different
 		if [[ $SIZE_SOURCE -ne $SIZE_BACKUP ]]; then
 			mv -f "$COPY_LINK" "$COPY_LINK.$CURRENT_DATE"
