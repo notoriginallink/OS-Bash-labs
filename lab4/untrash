@@ -51,8 +51,7 @@ ls -1 "$TRASH" | while read -r NUMBER; do
 
 	# restore file if answer is positive (starts with Y/y)
 	if [[ $ANSWER =~ ^[Yy]+.* ]]; then
-		# trash is path to the file in trash bin, restore is dir where the file will be
-		RESTORE_DIR=$(echo "$ORIGIN_PATH" | grep -E -o ".*\/($1){0}" | sed 's/.$//')
+		RESTORE_DIR=$(echo "$ORIGIN_PATH" | grep -E -o ".*\/" | sed 's/.$//')
 
 		# check if restore directory still exists
 		if ! [[ -d "$RESTORE_DIR" ]]; then
