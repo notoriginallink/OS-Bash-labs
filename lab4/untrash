@@ -6,9 +6,7 @@ if [[ $# -eq 0 ]]; then
 	exit 1
 fi
 
-FILENAME=$@
-
-if [[ $FILENAME =~ .*\/.* ]]; then
+if [[ "$@" =~ .*\/.* ]]; then
 	echo "Error: path given instead of file name"
 	exit 1
 fi
@@ -22,18 +20,23 @@ if ! [[ -f $TRASH_LOG ]] || ! [[ -d $TRASH ]]; then
 	exit 2
 fi
 
-# find in LOG file all matches of file name
-FILENAME_REGEXP="^[^[:space:]]*/$FILENAME"
+ls -1 "$TRASH" | while read -r NUMBER; do
+	LINE=$(grep -E -w ".*\/$NUMBER" $TRASH_LOG)
+	TRASH_PATH=$(echo "$LINE" | awk '{print $(NF)}')
+	ORIGIN_PATH=$(echo "$LINE" | awk '{$(NF)=""; print $0}' | sed 's/.$//')
+	FILENAME=$(echo "$ORIGIN_PATH" | grep -E -o "\/[^\/]+$" | sed 's/^.//')
 
-grep -E -w "$FILENAME_REGEXP" $TRASH_LOG | while read -r LINE; do	
-	# check if file in trash bin
-	TRASH_PATH=$(echo $LINE | awk '{print $(NF)}')
-	if ! [[ -f $TRASH_PATH ]]; then
+#	echo "$LINE"
+#	echo "$TRASH_PATH"
+#	echo "$ORIGIN_PATH"
+#	echo "$FILENAME"
+
+	# check file's original name
+	if ! [[ "$FILENAME" == "$@" ]]; then
 		continue
 	fi
 
-	# for each match ask if the file should be restored
-	ORIGIN_PATH=$(echo $LINE | awk '{$(NF)=""; print $0}' | sed 's/.$//')
+	# ask if the file should be restored
 	while true; do
 		read -r -p "Do you want to restore $ORIGIN_PATH? [y/n]: " ANSWER < /dev/tty
 		case $ANSWER in
@@ -50,14 +53,14 @@ grep -E -w "$FILENAME_REGEXP" $TRASH_LOG | while read -r LINE; do
 	if [[ $ANSWER =~ ^[Yy]+.* ]]; then
 		# trash is path to the file in trash bin, restore is dir where the file will be
 		RESTORE_DIR=$(echo "$ORIGIN_PATH" | grep -E -o ".*\/($1){0}" | sed 's/.$//')
-		
+
 		# check if restore directory still exists
 		if ! [[ -d "$RESTORE_DIR" ]]; then
 			echo "INFO: $RESTORE_DIR doesn't exists, file will be restored in /home"
 			$RESTORE_DIR="/home"
-		fi 
+		fi
 
-		RESTORE_PATH="$RESTORE_DIR/$FILENAME"		
+		RESTORE_PATH="$RESTORE_DIR/$FILENAME"
 
 		# check if there a name conflict in restore directory
 		while [[ -f "$RESTORE_PATH" ]]; do
