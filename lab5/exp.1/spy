@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm -f exp.data; touch exp.data
+
+while true; do
+	top -c -n 1 | sed '4,5! d' >> exp.data
+	top -c -n 1 -b | grep '\(mem\.bash\)' >> exp.data
+	top -c -n 1 -b | sed '8,12! d' | awk '{out = $1; for (i = 12; i <= NF; ++i) {out = out " " $i}; print out}' >> exp.data
+	echo "----------" >> exp.data
+	echo "LOGGED"
+	sleep 2
+done
+
+
