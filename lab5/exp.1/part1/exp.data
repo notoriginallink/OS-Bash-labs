@@ -1,0 +1,935 @@
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1387.7 [m[39;49mfree,[m[39;49m[1m    176.8 [m[39;49mused,[m[39;49m[1m    252.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1488.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  232944  13560   2908 R  64.7   0.7   0:02.38 bash mem.bash
+1602 bash mem.bash
+1568 [kworker/0:0-events_freezab+
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1375.9 [m[39;49mfree,[m[39;49m[1m    188.6 [m[39;49mused,[m[39;49m[1m    252.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1477.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  244956  25440   2908 R  75.0   1.4   0:05.30 bash mem.bash
+1602 bash mem.bash
+1569 [kworker/0:2-events]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1363.9 [m[39;49mfree,[m[39;49m[1m    200.6 [m[39;49mused,[m[39;49m[1m    252.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1465.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  257100  37584   2908 R  75.0   2.0   0:08.19 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1344.6 [m[39;49mfree,[m[39;49m[1m    219.9 [m[39;49mused,[m[39;49m[1m    252.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1445.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  277164  57648   2908 R  62.5   3.1   0:11.24 bash mem.bash
+1602 bash mem.bash
+884 /usr/libexec/sssd/sssd_nss +
+1568 [kworker/0:0-cgroup_destroy]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1323.3 [m[39;49mfree,[m[39;49m[1m    241.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1424.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  298944  79560   2908 R  86.7   4.3   0:14.33 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1301.6 [m[39;49mfree,[m[39;49m[1m    262.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1402.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  321120 101736   2908 R  87.5   5.5   0:17.49 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1278.4 [m[39;49mfree,[m[39;49m[1m    286.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1379.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  344748 125232   2908 R  76.5   6.7   0:20.63 bash mem.bash
+1602 bash mem.bash
+1692 top -c -n 1 -b
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1256.4 [m[39;49mfree,[m[39;49m[1m    308.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1357.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  367320 147672   2908 R  76.5   7.9   0:23.75 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1233.7 [m[39;49mfree,[m[39;49m[1m    330.7 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1334.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  390420 170904   2908 R  72.2   9.2   0:26.91 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1211.8 [m[39;49mfree,[m[39;49m[1m    352.6 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1313.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  412860 193344   2908 R  82.4  10.4   0:30.08 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1190.1 [m[39;49mfree,[m[39;49m[1m    374.3 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1291.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  435036 215520   2908 R  86.7  11.6   0:33.21 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1168.4 [m[39;49mfree,[m[39;49m[1m    396.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1269.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  457212 237696   2908 R  75.0  12.8   0:36.36 bash mem.bash
+1602 bash mem.bash
+1569 [kworker/0:2-events]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1145.8 [m[39;49mfree,[m[39;49m[1m    418.5 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1247.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  480180 260664   2908 R  80.0  14.0   0:39.52 bash mem.bash
+1602 bash mem.bash
+10 [ksoftirqd/0]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1124.7 [m[39;49mfree,[m[39;49m[1m    439.7 [m[39;49mused,[m[39;49m[1m    252.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1225.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  501828 282312   2908 R  76.5  15.2   0:42.67 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1104.5 [m[39;49mfree,[m[39;49m[1m    460.0 [m[39;49mused,[m[39;49m[1m    252.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1205.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  522288 302904   2908 R  73.7  16.3   0:45.78 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1084.1 [m[39;49mfree,[m[39;49m[1m    480.4 [m[39;49mused,[m[39;49m[1m    252.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1185.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  543276 323760   2908 R  86.7  17.4   0:48.87 bash mem.bash
+1602 bash mem.bash
+1768 [kworker/0:1-events_power_e+
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1062.0 [m[39;49mfree,[m[39;49m[1m    502.4 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1163.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  566112 346728   2908 R  82.4  18.6   0:52.05 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1040.8 [m[39;49mfree,[m[39;49m[1m    523.6 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1142.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  587496 368112   2908 R  87.5  19.8   0:55.16 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m   1018.8 [m[39;49mfree,[m[39;49m[1m    545.6 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1120.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  610068 390552   2908 R  87.5  21.0   0:58.27 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    995.9 [m[39;49mfree,[m[39;49m[1m    568.5 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1097.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  633432 414048   2908 R  87.5  22.3   1:01.44 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    973.2 [m[39;49mfree,[m[39;49m[1m    591.2 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1074.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  656664 437280   2908 R  80.0  23.5   1:04.59 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    952.4 [m[39;49mfree,[m[39;49m[1m    612.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1053.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  677784 458400   2908 R  86.7  24.6   1:07.72 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    930.2 [m[39;49mfree,[m[39;49m[1m    634.2 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1031.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  700620 481104   2908 R  81.2  25.9   1:10.86 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    908.6 [m[39;49mfree,[m[39;49m[1m    655.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m   1009.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  722664 503016   2908 R  68.8  27.0   1:13.93 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    886.7 [m[39;49mfree,[m[39;49m[1m    677.7 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    987.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  745236 525720   2908 R  83.3  28.3   1:17.07 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    864.5 [m[39;49mfree,[m[39;49m[1m    699.9 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    965.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  767940 548424   2908 R  72.2  29.5   1:20.22 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    842.9 [m[39;49mfree,[m[39;49m[1m    721.5 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    944.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  789852 570336   2908 R  86.7  30.7   1:23.36 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    820.4 [m[39;49mfree,[m[39;49m[1m    744.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    921.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  812952 593304   2908 R  81.2  31.9   1:26.49 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    796.8 [m[39;49mfree,[m[39;49m[1m    767.6 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    898.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  836976 617592   2908 R  81.2  33.2   1:29.63 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    774.4 [m[39;49mfree,[m[39;49m[1m    790.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    875.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  860076 640560   2908 R  78.9  34.4   1:32.79 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    751.6 [m[39;49mfree,[m[39;49m[1m    812.9 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    852.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  883572 664056   2908 R  73.7  35.7   1:35.94 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    729.1 [m[39;49mfree,[m[39;49m[1m    835.3 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    830.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  905748 686232   2908 R  81.2  36.9   1:39.06 bash mem.bash
+1602 bash mem.bash
+1993 top -c -n 1 -b
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    713.3 [m[39;49mfree,[m[39;49m[1m    851.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    814.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  922380 702864   2908 R  82.4  37.8   1:42.08 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    690.5 [m[39;49mfree,[m[39;49m[1m    874.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    791.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  945744 726360   2908 R  77.8  39.0   1:45.28 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    668.5 [m[39;49mfree,[m[39;49m[1m    895.9 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    769.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  968052 748536   2908 R  82.4  40.2   1:48.42 bash mem.bash
+1602 bash mem.bash
+26 [khugepaged]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    646.9 [m[39;49mfree,[m[39;49m[1m    917.5 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    748.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0  990228 770712   2908 R  73.7  41.4   1:51.54 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    624.4 [m[39;49mfree,[m[39;49m[1m    940.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    725.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1013196 793680   2908 R  86.7  42.7   1:54.71 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    601.9 [m[39;49mfree,[m[39;49m[1m    962.5 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    703.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1036032 816648   2908 R  81.2  43.9   1:57.90 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    583.3 [m[39;49mfree,[m[39;49m[1m    981.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    684.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1054644 835128   2908 R  73.3  44.9   2:00.93 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    562.0 [m[39;49mfree,[m[39;49m[1m   1002.4 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    663.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1076952 857568   2908 R  75.0  46.1   2:04.02 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    538.3 [m[39;49mfree,[m[39;49m[1m   1026.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    639.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1101108 881592   2908 R  82.4  47.4   2:07.26 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    517.8 [m[39;49mfree,[m[39;49m[1m   1046.6 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    619.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1122228 902712   2908 R  73.7  48.5   2:10.37 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    495.2 [m[39;49mfree,[m[39;49m[1m   1069.2 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    596.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1145328 925680   2908 R  81.2  49.7   2:13.50 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    472.6 [m[39;49mfree,[m[39;49m[1m   1091.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    573.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1168428 948912   2908 R  82.4  51.0   2:16.62 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    451.8 [m[39;49mfree,[m[39;49m[1m   1112.6 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    553.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1189416 970032   2908 R  82.4  52.1   2:19.76 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    430.6 [m[39;49mfree,[m[39;49m[1m   1133.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    531.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1211064 991680   2908 R  86.7  53.3   2:22.93 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    407.3 [m[39;49mfree,[m[39;49m[1m   1157.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    508.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1235088 991.6m   2908 R  88.2  54.6   2:26.13 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    384.4 [m[39;49mfree,[m[39;49m[1m   1180.0 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    485.6 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1258452   1.0g   2908 R  86.7  55.8   2:29.32 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    361.0 [m[39;49mfree,[m[39;49m[1m   1203.4 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    462.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1282476   1.0g   2908 R  78.9  57.1   2:32.54 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    337.3 [m[39;49mfree,[m[39;49m[1m   1227.1 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    438.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1306632   1.0g   2908 R  66.7  58.4   2:35.71 bash mem.bash
+1602 bash mem.bash
+1768 [kworker/0:1-events]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    314.2 [m[39;49mfree,[m[39;49m[1m   1250.2 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    415.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1330128   1.1g   2908 R  81.2  59.7   2:38.87 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    290.7 [m[39;49mfree,[m[39;49m[1m   1273.7 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    391.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1354152   1.1g   2908 R  82.4  61.0   2:42.10 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    267.5 [m[39;49mfree,[m[39;49m[1m   1296.9 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    368.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1377912   1.1g   2908 R  86.7  62.2   2:45.32 bash mem.bash
+1602 bash mem.bash
+26 [khugepaged]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    244.2 [m[39;49mfree,[m[39;49m[1m   1320.2 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    345.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1401672   1.1g   2908 R  81.2  63.5   2:48.46 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    221.0 [m[39;49mfree,[m[39;49m[1m   1343.4 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    322.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1425564   1.2g   2908 R  77.8  64.8   2:51.69 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    200.1 [m[39;49mfree,[m[39;49m[1m   1364.3 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    301.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1446816   1.2g   2908 R  82.4  65.9   2:54.84 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    178.0 [m[39;49mfree,[m[39;49m[1m   1386.4 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    279.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1469256   1.2g   2908 R  70.6  67.2   2:57.99 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    155.6 [m[39;49mfree,[m[39;49m[1m   1408.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    256.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1492092   1.2g   2908 R  86.7  68.4   3:01.11 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    133.6 [m[39;49mfree,[m[39;49m[1m   1430.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    234.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1514796   1.2g   2908 R  76.5  69.6   3:04.29 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m    111.0 [m[39;49mfree,[m[39;49m[1m   1453.4 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    212.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1538028   1.3g   2908 R  73.7  70.9   3:07.50 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     87.6 [m[39;49mfree,[m[39;49m[1m   1476.8 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    188.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1561788   1.3g   2908 R  82.4  72.1   3:10.66 bash mem.bash
+1602 bash mem.bash
+2341 top -c -n 1 -b
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     63.5 [m[39;49mfree,[m[39;49m[1m   1500.9 [m[39;49mused,[m[39;49m[1m    252.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    820.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    164.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1586208   1.3g   2908 R  83.3  73.5   3:13.86 bash mem.bash
+1602 bash mem.bash
+49 [kswapd0]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.8 [m[39;49mfree,[m[39;49m[1m   1525.3 [m[39;49mused,[m[39;49m[1m    220.1 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    819.7 [m[39;49mfree,[m[39;49m[1m      0.3 [m[39;49mused.[m[39;49m[1m    142.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1610892   1.3g   2488 R  68.8  74.8   3:17.18 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     64.0 [m[39;49mfree,[m[39;49m[1m   1545.2 [m[39;49mused,[m[39;49m[1m    208.0 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    817.5 [m[39;49mfree,[m[39;49m[1m      2.5 [m[39;49mused.[m[39;49m[1m    123.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1632012   1.3g   2484 R  87.5  75.9   3:20.26 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.9 [m[39;49mfree,[m[39;49m[1m   1569.7 [m[39;49mused,[m[39;49m[1m    175.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    817.0 [m[39;49mfree,[m[39;49m[1m      3.0 [m[39;49mused.[m[39;49m[1m     99.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1657488   1.4g   2484 R  75.0  77.3   3:23.54 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.5 [m[39;49mfree,[m[39;49m[1m   1594.6 [m[39;49mused,[m[39;49m[1m    151.1 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    816.5 [m[39;49mfree,[m[39;49m[1m      3.5 [m[39;49mused.[m[39;49m[1m     74.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1682832   1.4g   2484 R  82.4  78.6   3:26.80 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     80.1 [m[39;49mfree,[m[39;49m[1m   1618.3 [m[39;49mused,[m[39;49m[1m    118.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    815.2 [m[39;49mfree,[m[39;49m[1m      4.8 [m[39;49mused.[m[39;49m[1m     63.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1708044   1.4g   2484 R  87.5  80.0   3:30.15 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     72.2 [m[39;49mfree,[m[39;49m[1m   1642.2 [m[39;49mused,[m[39;49m[1m    102.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    814.2 [m[39;49mfree,[m[39;49m[1m      5.8 [m[39;49mused.[m[39;49m[1m     47.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1732992   1.4g   2484 R  76.5  81.3   3:33.38 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     72.9 [m[39;49mfree,[m[39;49m[1m   1664.2 [m[39;49mused,[m[39;49m[1m     80.1 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    812.4 [m[39;49mfree,[m[39;49m[1m      7.5 [m[39;49mused.[m[39;49m[1m     36.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1757280   1.5g   2480 R  76.5  82.6   3:36.51 bash mem.bash
+1602 bash mem.bash
+49 [kswapd0]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     93.2 [m[39;49mfree,[m[39;49m[1m   1645.1 [m[39;49mused,[m[39;49m[1m     78.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    764.4 [m[39;49mfree,[m[39;49m[1m     55.6 [m[39;49mused.[m[39;49m[1m     56.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1781436   1.4g   2480 R  70.0  81.6   3:39.62 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     67.0 [m[39;49mfree,[m[39;49m[1m   1668.6 [m[39;49mused,[m[39;49m[1m     81.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    764.4 [m[39;49mfree,[m[39;49m[1m     55.6 [m[39;49mused.[m[39;49m[1m     32.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1805328   1.5g   2480 R  82.4  82.9   3:42.81 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     65.4 [m[39;49mfree,[m[39;49m[1m   1671.7 [m[39;49mused,[m[39;49m[1m     80.1 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    744.6 [m[39;49mfree,[m[39;49m[1m     75.4 [m[39;49mused.[m[39;49m[1m     29.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1829616   1.5g   2480 R  87.5  83.1   3:46.03 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     79.0 [m[39;49mfree,[m[39;49m[1m   1660.6 [m[39;49mused,[m[39;49m[1m     77.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    711.4 [m[39;49mfree,[m[39;49m[1m    108.6 [m[39;49mused.[m[39;49m[1m     42.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1852188   1.5g   2480 R  82.4  82.6   3:49.11 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     74.1 [m[39;49mfree,[m[39;49m[1m   1667.3 [m[39;49mused,[m[39;49m[1m     75.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    689.0 [m[39;49mfree,[m[39;49m[1m    131.0 [m[39;49mused.[m[39;49m[1m     36.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1875156   1.5g   2440 R  73.7  82.6   3:52.23 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     65.2 [m[39;49mfree,[m[39;49m[1m   1676.8 [m[39;49mused,[m[39;49m[1m     75.1 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    682.9 [m[39;49mfree,[m[39;49m[1m    137.1 [m[39;49mused.[m[39;49m[1m     27.2 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1898388   1.5g   2440 R  77.8  83.5   3:55.39 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     62.7 [m[39;49mfree,[m[39;49m[1m   1680.8 [m[39;49mused,[m[39;49m[1m     73.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    663.8 [m[39;49mfree,[m[39;49m[1m    156.2 [m[39;49mused.[m[39;49m[1m     24.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1921224   1.5g   2440 R  66.7  83.4   3:58.51 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.7 [m[39;49mfree,[m[39;49m[1m   1674.4 [m[39;49mused,[m[39;49m[1m     71.1 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    630.4 [m[39;49mfree,[m[39;49m[1m    189.6 [m[39;49mused.[m[39;49m[1m     31.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1944984   1.5g   2440 R  81.2  83.3   4:01.71 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     72.3 [m[39;49mfree,[m[39;49m[1m   1675.3 [m[39;49mused,[m[39;49m[1m     69.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    608.0 [m[39;49mfree,[m[39;49m[1m    212.0 [m[39;49mused.[m[39;49m[1m     31.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1966764   1.5g   2440 R  80.0  83.2   4:04.78 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     65.6 [m[39;49mfree,[m[39;49m[1m   1681.9 [m[39;49mused,[m[39;49m[1m     69.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    588.9 [m[39;49mfree,[m[39;49m[1m    231.1 [m[39;49mused.[m[39;49m[1m     25.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 1991844   1.5g   2440 R  75.0  83.6   4:08.17 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     63.9 [m[39;49mfree,[m[39;49m[1m   1684.8 [m[39;49mused,[m[39;49m[1m     68.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    570.5 [m[39;49mfree,[m[39;49m[1m    249.5 [m[39;49mused.[m[39;49m[1m     22.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2014152   1.5g   2440 R  78.9  83.8   4:11.31 bash mem.bash
+1602 bash mem.bash
+49 [kswapd0]
+10 [ksoftirqd/0]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     64.3 [m[39;49mfree,[m[39;49m[1m   1685.7 [m[39;49mused,[m[39;49m[1m     67.2 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    551.7 [m[39;49mfree,[m[39;49m[1m    268.3 [m[39;49mused.[m[39;49m[1m     22.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2033424   1.5g   2440 R  75.0  83.8   4:14.32 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.5 [m[39;49mfree,[m[39;49m[1m   1680.9 [m[39;49mused,[m[39;49m[1m     64.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    515.7 [m[39;49mfree,[m[39;49m[1m    304.3 [m[39;49mused.[m[39;49m[1m     28.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2056656   1.5g   2440 R  84.2  83.2   4:17.53 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     70.0 [m[39;49mfree,[m[39;49m[1m   1683.6 [m[39;49mused,[m[39;49m[1m     63.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    494.3 [m[39;49mfree,[m[39;49m[1m    325.6 [m[39;49mused.[m[39;49m[1m     26.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2078832   1.5g   2440 R  72.2  83.2   4:20.63 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     80.2 [m[39;49mfree,[m[39;49m[1m   1675.3 [m[39;49mused,[m[39;49m[1m     61.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    461.6 [m[39;49mfree,[m[39;49m[1m    358.3 [m[39;49mused.[m[39;49m[1m     36.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2100480   1.5g   2440 R  73.7  82.8   4:23.75 bash mem.bash
+1602 bash mem.bash
+2630 top -c -n 1 -b
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     76.8 [m[39;49mfree,[m[39;49m[1m   1679.2 [m[39;49mused,[m[39;49m[1m     61.2 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    443.8 [m[39;49mfree,[m[39;49m[1m    376.2 [m[39;49mused.[m[39;49m[1m     32.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2123316   1.5g   2440 R  82.4  83.0   4:26.85 bash mem.bash
+1602 bash mem.bash
+10 [ksoftirqd/0]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     74.0 [m[39;49mfree,[m[39;49m[1m   1682.7 [m[39;49mused,[m[39;49m[1m     60.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    412.1 [m[39;49mfree,[m[39;49m[1m    407.9 [m[39;49mused.[m[39;49m[1m     29.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2146020   1.5g   2440 R  77.8  82.7   4:29.95 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.6 [m[39;49mfree,[m[39;49m[1m   1686.2 [m[39;49mused,[m[39;49m[1m     59.4 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    390.2 [m[39;49mfree,[m[39;49m[1m    429.8 [m[39;49mused.[m[39;49m[1m     26.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2168592   1.5g   2440 R  78.9  82.7   4:33.07 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     66.6 [m[39;49mfree,[m[39;49m[1m   1692.6 [m[39;49mused,[m[39;49m[1m     57.9 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    370.1 [m[39;49mfree,[m[39;49m[1m    449.9 [m[39;49mused.[m[39;49m[1m     20.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2192088   1.5g   2408 R  75.0  82.4   4:36.19 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     73.3 [m[39;49mfree,[m[39;49m[1m   1687.4 [m[39;49mused,[m[39;49m[1m     56.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    343.5 [m[39;49mfree,[m[39;49m[1m    476.5 [m[39;49mused.[m[39;49m[1m     26.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2215584   1.5g   2320 R  82.4  82.8   4:39.31 bash mem.bash
+1602 bash mem.bash
+1568 [kworker/0:0-events_power_e+
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     69.9 [m[39;49mfree,[m[39;49m[1m   1691.7 [m[39;49mused,[m[39;49m[1m     55.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    325.9 [m[39;49mfree,[m[39;49m[1m    494.1 [m[39;49mused.[m[39;49m[1m     22.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2237232   1.5g   2312 R  72.2  83.1   4:42.39 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     68.0 [m[39;49mfree,[m[39;49m[1m   1694.3 [m[39;49mused,[m[39;49m[1m     54.9 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    303.5 [m[39;49mfree,[m[39;49m[1m    516.5 [m[39;49mused.[m[39;49m[1m     20.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2258748   1.5g   2312 R  77.8  83.0   4:45.45 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     65.9 [m[39;49mfree,[m[39;49m[1m   1697.2 [m[39;49mused,[m[39;49m[1m     54.0 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    284.9 [m[39;49mfree,[m[39;49m[1m    535.1 [m[39;49mused.[m[39;49m[1m     18.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2280792   1.5g   2312 R  81.2  83.2   4:48.55 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     76.3 [m[39;49mfree,[m[39;49m[1m   1687.4 [m[39;49mused,[m[39;49m[1m     53.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    253.4 [m[39;49mfree,[m[39;49m[1m    566.6 [m[39;49mused.[m[39;49m[1m     28.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2302440   1.5g   2312 R  82.4  82.7   4:51.63 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     73.5 [m[39;49mfree,[m[39;49m[1m   1691.0 [m[39;49mused,[m[39;49m[1m     52.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    231.6 [m[39;49mfree,[m[39;49m[1m    588.4 [m[39;49mused.[m[39;49m[1m     25.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2324484   1.5g   2312 R  80.0  82.7   4:54.74 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     68.7 [m[39;49mfree,[m[39;49m[1m   1696.1 [m[39;49mused,[m[39;49m[1m     52.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    204.1 [m[39;49mfree,[m[39;49m[1m    615.8 [m[39;49mused.[m[39;49m[1m     20.4 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2346396   1.5g   2312 R  80.0  82.4   4:57.83 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     71.4 [m[39;49mfree,[m[39;49m[1m   1693.9 [m[39;49mused,[m[39;49m[1m     51.9 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    187.6 [m[39;49mfree,[m[39;49m[1m    632.4 [m[39;49mused.[m[39;49m[1m     22.9 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2368044   1.5g   2312 R  70.6  82.7   5:01.01 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     65.4 [m[39;49mfree,[m[39;49m[1m   1699.2 [m[39;49mused,[m[39;49m[1m     52.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    169.2 [m[39;49mfree,[m[39;49m[1m    650.8 [m[39;49mused.[m[39;49m[1m     17.3 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2391540   1.5g   2312 R  81.2  83.0   5:04.17 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     76.8 [m[39;49mfree,[m[39;49m[1m   1687.1 [m[39;49mused,[m[39;49m[1m     53.2 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    133.2 [m[39;49mfree,[m[39;49m[1m    686.8 [m[39;49mused.[m[39;49m[1m     29.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2417016   1.5g   2312 R  77.8  82.4   5:07.43 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     73.2 [m[39;49mfree,[m[39;49m[1m   1690.9 [m[39;49mused,[m[39;49m[1m     53.0 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m    105.6 [m[39;49mfree,[m[39;49m[1m    714.4 [m[39;49mused.[m[39;49m[1m     25.5 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2439852   1.5g   2312 R  87.5  82.2   5:10.49 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     63.0 [m[39;49mfree,[m[39;49m[1m   1701.4 [m[39;49mused,[m[39;49m[1m     52.7 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m     93.8 [m[39;49mfree,[m[39;49m[1m    726.2 [m[39;49mused.[m[39;49m[1m     15.1 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2462292   1.5g   2312 R  76.5  82.7   5:13.63 bash mem.bash
+1602 bash mem.bash
+49 [kswapd0]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     66.5 [m[39;49mfree,[m[39;49m[1m   1699.2 [m[39;49mused,[m[39;49m[1m     51.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m     67.4 [m[39;49mfree,[m[39;49m[1m    752.6 [m[39;49mused.[m[39;49m[1m     18.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2485920   1.5g   2312 R  75.0  82.6   5:16.77 bash mem.bash
+1602 bash mem.bash
+2802 [kworker/0:2-events]
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     62.3 [m[39;49mfree,[m[39;49m[1m   1703.1 [m[39;49mused,[m[39;49m[1m     51.8 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m     49.0 [m[39;49mfree,[m[39;49m[1m    771.0 [m[39;49mused.[m[39;49m[1m     14.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2508492   1.5g   2312 R  58.8  81.8   5:19.86 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     69.1 [m[39;49mfree,[m[39;49m[1m   1696.5 [m[39;49mused,[m[39;49m[1m     51.6 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m     17.1 [m[39;49mfree,[m[39;49m[1m    802.9 [m[39;49mused.[m[39;49m[1m     20.8 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+   1602 root      20   0 2532780   1.5g   2312 R  77.8  82.4   5:23.05 bash mem.bash
+1602 bash mem.bash
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+----------
+MiB Mem :[m[39;49m[1m   1817.2 [m[39;49mtotal,[m[39;49m[1m     67.9 [m[39;49mfree,[m[39;49m[1m   1714.8 [m[39;49mused,[m[39;49m[1m     34.5 [m[39;49mbuff/cache[m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m    820.0 [m[39;49mtotal,[m[39;49m[1m      0.0 [m[39;49mfree,[m[39;49m[1m    820.0 [m[39;49mused.[m[39;49m[1m     11.0 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+1 /usr/lib/systemd/systemd --+
+2 [kthreadd]
+3 [rcu_gp]
+4 [rcu_par_gp]
+6 [kworker/0:0H-events_highpr+
+----------
