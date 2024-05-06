@@ -3,7 +3,7 @@
 rm -f .completed; touch .completed
 
 CRIT_SIZE=30000000
-N=$(($CRIT_SIZE / 10))
+N=1240000
 K=30
 
 IND=0
