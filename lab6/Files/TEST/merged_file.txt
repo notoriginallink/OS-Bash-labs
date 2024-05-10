@@ -1,0 +1,38 @@
+@echo off
+
+copy * merged_file.txt@echo off
+
+:: another way is to wmic logicaldisk get caption,size,freespace > disk_info.txt
+
+set "result=disk_info.txt"
+set "script=diskpart_script.txt"
+set "temp=temp.txt"
+
+:: create script for diskpart
+echo list volume > "%script%"
+echo exit >> %script%
+
+:: exexute script
+diskpart /s %script% > %result%
+
+:: remove first 5 lines
+more +5 "%result%" > "%temp%"
+
+:: remove last line
+type %temp% | findstr /v "Leaving" > %result%
+
+:: delete temp file for script
+del %script%
+del %temp%  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 0     D                       DVD-ROM         0 B  Healthy            
+  Volume 1     C                NTFS   Partition     10 GB  Healthy    System  
+
+@echo off
+systeminfo | find "Total Physical Memory" > memory_info.txt
+systeminfo | find "Available Physical Memory" >> memory_info.txtTotal Physical Memory:     1,023 MB
+Available Physical Memory: 730 MB
+@echo off
+
+systeminfo | find "OS Version" | findstr /B "OS" > os_version.txtOS Version:                5.2.3790 Service Pack 2 Build 3790
+
