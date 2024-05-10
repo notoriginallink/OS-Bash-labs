@@ -1,0 +1,13 @@
+Comparing files services.txt and UPDATED_SERVICES.TXT
+***** services.txt
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN))
+        WIN32_EXIT_CODE    : 0  (0x0)
+***** UPDATED_SERVICES.TXT
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 1  STOPPED 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN))
+        WIN32_EXIT_CODE    : 0  (0x0)
+*****
+
