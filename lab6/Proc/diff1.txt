@@ -1,0 +1,1 @@
+Comparing files C:\WINDOWS\SYSTEM32\shell32.dll and DANYA-E4RWF49IT\TEMP\SHELL32.DLL

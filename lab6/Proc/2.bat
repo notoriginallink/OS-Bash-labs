@@ -7,5 +7,3 @@ set FILE="C:\WINDOWS\system32\shell32.dll"
 for /f "tokens=*" %%i in ('hostname') do set "HOSTNAME=%%i"
 
 xcopy "%FILE%" \\%HOSTNAME%\temp
-
-exit /b
