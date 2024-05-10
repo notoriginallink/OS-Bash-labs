@@ -1,0 +1,5 @@
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+  Volume 0     D                       DVD-ROM         0 B  Healthy            
+  Volume 1     C                NTFS   Partition     10 GB  Healthy    System  
+
